@@ -36,14 +36,14 @@
       class="bg-gradient-to-br from-blue from-opacity-5 to-green to-opacity-5 rounded-xl p-6 mb-8 border border-gray-200"
     >
       <div
-        class="text-sm font-AsapCondensedBold text-gray-500 uppercase tracking-wide mb-2"
+        class="text-sm font-AsapCondensedBold text-white uppercase tracking-wide mb-2"
       >
         Bill To
       </div>
-      <div class="font-AsapCondensedBold text-gray-900 text-2xl mb-2">
+      <div class="font-AsapCondensedBold text-white text-2xl mb-2">
         {{ invoice.customerId?.name }}
       </div>
-      <div class="font-AsapCondensedRegular text-gray-600">
+      <div class="font-AsapCondensedRegular text-white">
         Discount: {{ invoice.discount }}%
       </div>
     </div>

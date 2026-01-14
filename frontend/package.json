@@ -1,0 +1,45 @@
+{
+  "name": "mezeh-mealtime",
+  "version": "0.0.0",
+  "scripts": {
+    "build": "APP_ENV=production vite build",
+    "dev": "APP_ENV=development vite serve --mode development --host",
+    "prod": "APP_ENV=production vite serve --mode production --host",
+    "preview": "vite preview",
+    "test:unit": "vitest --environment jsdom --root src/",
+    "test:e2e": "start-server-and-test preview :4173 'cypress run --e2e'",
+    "test:e2e:dev": "start-server-and-test 'vite dev --port 4173' :4173 'cypress open --e2e'",
+    "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs --fix --ignore-path .gitignore"
+  },
+  "dependencies": {
+    "axios": "^1.4.0",
+    "cors": "^2.8.5",
+    "moment": "^2.30.1",
+    "pinia": "^2.0.23",
+    "swiper": "^8.4.7",
+    "vue": "^3.2.41",
+    "vue-router": "^4.4.5",
+    "vue-scrollto": "^2.20.0",
+    "vue3-carousel": "^0.7.1",
+    "vue3-google-map": "^0.21.0"
+  },
+  "devDependencies": {
+    "@rushstack/eslint-patch": "^1.1.4",
+    "@vitejs/plugin-vue": "^4.0.0",
+    "@vue/eslint-config-prettier": "^7.0.0",
+    "@vue/test-utils": "^2.1.0",
+    "autoprefixer": "^10.4.13",
+    "cypress": "^10.10.0",
+    "eslint": "^8.22.0",
+    "eslint-plugin-cypress": "^2.12.1",
+    "eslint-plugin-vue": "^9.3.0",
+    "jsdom": "^20.0.1",
+    "postcss": "^8.4.18",
+    "prettier": "^2.7.1",
+    "start-server-and-test": "^1.14.0",
+    "tailwindcss": "^3.2.2",
+    "tailwindcss-scrollbar": "^0.1.0",
+    "vite": "^4.0.0-alpha.6",
+    "vitest": "^0.24.3"
+  }
+}

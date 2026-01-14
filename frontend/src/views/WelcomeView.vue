@@ -2,7 +2,6 @@
   <div
     class="min-h-screen w-full flex flex-col items-center justify-center relative overflow-hidden bg-[#f8fafc] px-4 sm:px-6"
   >
-    <!-- Grid Background -->
     <div
       class="absolute inset-0 z-0 opacity-40"
       style="
@@ -11,7 +10,6 @@
       "
     ></div>
 
-    <!-- Decorative Shapes -->
     <div class="absolute inset-0 pointer-events-none overflow-hidden">
       <div
         class="absolute -top-10 -left-10 w-40 sm:w-64 h-40 sm:h-64 bg-green/20 rounded-full blur-2xl"
@@ -36,9 +34,7 @@
       ></div>
     </div>
 
-    <!-- Main Content -->
     <div class="relative z-10 flex flex-col items-center text-center max-w-3xl">
-      <!-- Logo -->
       <div
         class="mb-8 sm:mb-12 p-4 sm:p-6 bg-white shadow-sm rounded-2xl animate-fade-in border border-gray-100"
       >
@@ -49,7 +45,6 @@
         />
       </div>
 
-      <!-- Heading -->
       <h1
         class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-AsapCondensedBold text-[#1e293b] mb-4 tracking-tight animate-slide-up"
       >
@@ -57,7 +52,6 @@
         <span class="text-blue/100">StockDesk</span>
       </h1>
 
-      <!-- Subtitle -->
       <p
         class="text-base sm:text-lg md:text-xl lg:text-2xl font-AsapCondensedRegular text-gray-500 mb-10 sm:mb-12 max-w-xl animate-slide-up delay-200"
       >
@@ -67,7 +61,6 @@
         <span class="text-blue/100 font-AsapCondensedBold">confidence</span>.
       </p>
 
-      <!-- CTA -->
       <div
         class="p-1 sm:p-1.5 border-4 border-green/20 rounded-[20px] sm:rounded-[24px] animate-slide-up delay-300"
       >
@@ -96,7 +89,6 @@ export default {
 </script>
   
   <style scoped>
-/* Brand Colors */
 .text-green {
   color: #108a55;
 }
@@ -104,7 +96,6 @@ export default {
   color: #3b82f6;
 }
 
-/* Background utilities */
 .bg-green\/10 {
   background-color: rgba(16, 138, 85, 0.1);
 }
@@ -127,7 +118,6 @@ export default {
   border-color: rgba(16, 138, 85, 0.2);
 }
 
-/* Animations */
 @keyframes slideUp {
   from {
     opacity: 0;
@@ -160,7 +150,6 @@ export default {
   animation-delay: 0.4s;
 }
 
-/* Fonts */
 .font-AsapCondensedBold {
   font-family: "Asap Condensed", sans-serif;
   font-weight: 700;

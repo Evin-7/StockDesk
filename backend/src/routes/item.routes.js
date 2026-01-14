@@ -3,7 +3,6 @@ import Item from "../models/Item.js";
 
 const router = express.Router();
 
-// GET all items
 router.get("/", async (req, res) => {
   try {
     const items = await Item.find();
@@ -13,7 +12,6 @@ router.get("/", async (req, res) => {
   }
 });
 
-// GET single item
 router.get("/:id", async (req, res) => {
   try {
     const item = await Item.findById(req.params.id);
@@ -24,7 +22,6 @@ router.get("/:id", async (req, res) => {
   }
 });
 
-// CREATE item
 router.post("/", async (req, res) => {
   try {
     const item = new Item({
